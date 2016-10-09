@@ -34,5 +34,7 @@ angular.module('bar').controller('ContatoController', function($scope, $routePar
 			});
 	};
 
-	
+	Contato.query(function(contatos){
+		$scope.contatos = contatos;
+	});
 });
